@@ -21,3 +21,18 @@ for (let i=0; i<6; i++){
     btnArrays[i].setAttribute("id", objArrays[i]);
     btnContainer.appendChild(btnArrays[i])
     }
+
+    function colorized(name){
+        const array = [rainbow, grey, erase];
+        for (let i=0; i<3; i++){
+            function color(){
+                const r= Math.floor(Math.random()*256);
+                const g= Math.floor(Math.random()*256);
+                const b= Math.floor(Math.random()*256);
+                return `rgb(${r}, ${g}, ${b})`;}
+        
+            const clr = {0:color(), 1:"grey", 2:"white"};
+            array[i].addEventListener("click", function(){
+                name.addEventListener("mouseover",function(){
+                    this.style.backgroundColor = clr[i];})})
+        }}   
