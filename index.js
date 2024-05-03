@@ -36,3 +36,16 @@ for (let i=0; i<6; i++){
                 name.addEventListener("mouseover",function(){
                     this.style.backgroundColor = clr[i];})})
         }}   
+
+        btn16.addEventListener("click", function create16to16grid(){
+            const divFor8grid = document.querySelectorAll("div");
+            divFor8grid.forEach((cel8)=>cel8.classList.remove("cells8"));
+            for (let i=0; i<256; i++){
+            const cellsFor16grid = document.createElement("div");
+            cellsFor16grid.classList.add("cells16");
+            container.appendChild(cellsFor16grid);
+            colorized(cellsFor16grid);
+            } 
+            section.appendChild(container);
+        });
+        
