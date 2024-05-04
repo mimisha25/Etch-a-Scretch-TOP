@@ -49,3 +49,14 @@ for (let i=0; i<6; i++){
             section.appendChild(container);
         });
         
+        btn8.addEventListener("click", function create8to8grid(){
+            const divFor16grid = document.querySelectorAll("div");
+            divFor16grid.forEach((cel16)=>cel16.classList.remove("cells16"));
+        for (let i=0; i<64; i++){
+            const cellsFor8grid = document.createElement("div");
+            cellsFor8grid.classList.add("cells8");
+            container.appendChild(cellsFor8grid);
+            colorized(cellsFor8grid);
+            } 
+            section.appendChild(container);
+        });
