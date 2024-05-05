@@ -60,3 +60,11 @@ for (let i=0; i<6; i++){
             } 
             section.appendChild(container);
         });
+
+
+        
+        reset.addEventListener("click", function reset(){
+            const divElements = document.querySelectorAll('div');
+            divElements.forEach(d=>{d.style.backgroundColor="";})
+            section.removeChild(divElements[1]);
+        })
