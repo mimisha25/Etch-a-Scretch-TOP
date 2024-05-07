@@ -29,3 +29,19 @@ section{
         height: 60px;
         border: var(--border);
     }
+
+    h1 {
+        background-clip: text;
+        background-image: linear-gradient(to right,
+                #09f1b8,
+                #00a2ff,
+                #ff00d2,
+                #fed90f);
+        font-size: 5rem;
+        letter-spacing: calc(1em / 8);
+        -webkit-text-stroke-color: transparent;
+        -webkit-text-stroke-width: calc(1em / 16);
+        text-align: center;
+    }
+    
+  
