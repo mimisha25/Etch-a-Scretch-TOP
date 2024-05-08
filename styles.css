@@ -44,4 +44,42 @@ section{
         text-align: center;
     }
     
-  
+    button {
+        border-radius: 0px 30px 0px 30px;
+        color: #f6f1dd;
+        background: #9d0497;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        height: 50px;
+    }
+    
+    button:before{
+        content: "";
+        background: linear-gradient(45deg,
+                #ff0000,
+                #ff7300,
+                #fffb00,
+                #48ff00,
+                #00ffd5,
+                #002bff,
+                #7a00ff);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: 30s; 
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    
+    }
+    button:active:after {
+        background: transparent;
+    }
+    
+    button:hover:before {
+        opacity: 1;
+    }
