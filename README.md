@@ -40,7 +40,7 @@ open index.html
 
 ## Deployment ✅
 The application is deployed on Render. 
-Please, visit the live website here: [Live Application](https://etch-a-scretch-top.onrender.com))
+Please, visit the live website here: [Live Application](https://etch-a-scretch-top.onrender.com)
 
 
 ## License ©
